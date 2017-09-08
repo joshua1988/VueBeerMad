@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="body">
-    <!-- <ListHeader></ListHeader> -->
+    <ListHeader></ListHeader>
     <BeerCard></BeerCard>
     <BeerCard></BeerCard>
     <TabMenu></TabMenu>

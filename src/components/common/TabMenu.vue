@@ -1,21 +1,18 @@
 <template lang="html">
-  <md-tabs md-centered>
-    <md-tab md-icon="ondemand_video">
-    </md-tab>
-
-    <md-tab md-icon="music_note">
-    </md-tab>
-
-    <md-tab md-icon="books">
-    </md-tab>
-
-    <md-tab md-icon="photo">
-    </md-tab>
-  </md-tabs>
+  <md-bottom-bar>
+    <md-bottom-bar-item md-icon="home" md-active></md-bottom-bar-item>
+    <md-bottom-bar-item md-icon="add" @click.native='navigateRegForm'></md-bottom-bar-item>
+    <md-bottom-bar-item md-icon="favorite"></md-bottom-bar-item>
+  </md-bottom-bar>
 </template>
 
 <script>
 export default {
+  methods: {
+    navigateRegForm() {
+      this.$router.push('new');
+    },
+  },
 };
 </script>
 

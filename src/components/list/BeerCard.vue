@@ -33,7 +33,6 @@ img {
   height: 10px;
 }
 .md-card {
-  padding: 0.5rem;
-  margin-top: auto;
+  margin: 0.5rem 0.5rem;
 }
 </style>

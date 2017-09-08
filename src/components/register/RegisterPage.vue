@@ -1,11 +1,16 @@
 <template lang="html">
   <div class="">
-    <h5>Register</h5>
+    <RegForm></RegForm>
   </div>
 </template>
 
 <script>
+import RegForm from '@/components/register/RegForm';
+
 export default {
+  components: {
+    RegForm,
+  },
 };
 </script>
 

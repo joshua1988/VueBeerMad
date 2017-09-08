@@ -1,14 +1,6 @@
 <template lang="html">
-  <md-toolbar>
-    <md-button class="md-icon-button">
-      <md-icon>menu</md-icon>
-    </md-button>
-
+  <md-toolbar class="md-dense header" align="center">
     <h2 class="md-title" style="flex: 1">BeerMad</h2>
-
-    <md-button class="md-icon-button">
-      <md-icon @click.native='navigateRegForm'>add</md-icon>
-    </md-button>
   </md-toolbar>
 </template>
 
@@ -19,14 +11,15 @@ export default {
 
     };
   },
-  methods: {
-    navigateRegForm() {
-      this.$router.push('new');
-    },
-  },
 };
 </script>
 
 <style lang="css">
-
+  .md-toolbar {
+    background-color: transparent !important;
+    border-bottom-style: inset;
+  }
+  .md-title {
+    color: black;
+  }
 </style>
